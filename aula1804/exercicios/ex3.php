@@ -40,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Capitais dos Estados</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='ex3.css'>
 </head>
 <body>
     <form method="post" action="ex3.php">
