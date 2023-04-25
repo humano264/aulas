@@ -9,18 +9,14 @@
 
 
 <?php
-	for ($i=0; $i<=10; $i++) {
-					echo '<option value="'.$i.'">'.$i.'</option>';
-				}
-                if ($_POST) {
-                    $numero = $_POST['numero'];
-                    echo '<h2>Tabuada do '.$numero.'</h2>';
-                    echo '<table border="1">';
-                    for ($i=1; $i<=10; $i++) {
-                        echo '<tr><td>'.$numero.' x '.$i.'</td><td>'.($numero*$i).'</td></tr>';
-                    }
-                    echo '</table>';
-                }
+	$op = $_POST['num'];
+
+    echo "<h1>A tabuada do número escolhido($op) é:</h1>";
+
+    for($i=1;$i<=10;$i++){
+        $n = $op*$i;
+        echo "<h2>| $i x $op = $n |</h2>";
+    }
 ?>
 </body>
 
